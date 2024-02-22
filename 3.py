@@ -1,8 +1,7 @@
-from datetime import datetime
+import datetime
 
-current_datetime = datetime.now()
+x = datetime.datetime.now()
 
-current_datetime_without_microseconds = current_datetime.replace(microsecond=0)
+no_micro = x.replace(microsecond=0)
 
-print("Original datetime:", current_datetime)
-print("Datetime without microseconds:", current_datetime_without_microseconds)
+print(no_micro)
